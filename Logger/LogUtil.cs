@@ -13,7 +13,7 @@ namespace Logger
         private static LogUtil instance;
         //获取一个日志记录器
         //private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        private static readonly ILog log = LogManager.GetLogger("SecondLogger");
+        private static readonly ILog log = LogManager.GetLogger("FirstLogger");
         private LogUtil() { }
 
         public static LogUtil Instance
@@ -264,3 +264,5 @@ namespace Logger
 
     }
 }
+
+//自定义一个类来实现log4net.ObjectRender.IObjectRender接口，然后注册它，可以给ILog.Debug()传递object对象。

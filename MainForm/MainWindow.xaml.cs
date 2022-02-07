@@ -27,7 +27,7 @@ namespace MainForm
 
         private void FirstWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            Logger.LogUtil.Instance.Debug("abc");
+            Logger.LogUtil.Instance.Debug("打个日志打日志");
         }
     }
 }
